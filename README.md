@@ -11,6 +11,9 @@ Uma aplicação simples e eficiente de gerenciamento de tarefas desenvolvida com
 - [Pinia](https://pinia.vuejs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Vitest](http://vitest.dev/)
+- [Cypress](https://www.cypress.io/)
+- [Vue Test Utils](https://test-utils.vuejs.org/)
 
 ---
 
