@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"test": "vitest",
+		"test:e2e": "cypress run",
 		"cypress": "npx cypress open",
 		"build": "vue-tsc -b && vite build",
 		"preview": "vite preview"

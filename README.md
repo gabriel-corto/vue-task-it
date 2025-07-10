@@ -1,3 +1,8 @@
+Claro, Hob 🌿! Aqui está o `README.md` atualizado com os testes unitários e de integração **(end-to-end)** incluídos nas funcionalidades, e a estrutura de pastas revisada com os diretórios de testes.
+
+---
+
+```markdown
 # Task-it 📋 - App de Tarefas com Vue.js
 
 Uma aplicação simples e eficiente de gerenciamento de tarefas desenvolvida com **Vue.js 3**, **Pinia**, **Tailwind CSS** e **TypeScript**. Este projeto representa a **fase 1** da minha jornada de aprendizado no ecossistema Vue, inspirada na estrutura do primeiro módulo do curso da Rocketseat sobre React.
@@ -31,45 +36,8 @@ Uma aplicação simples e eficiente de gerenciamento de tarefas desenvolvida com
 10. ✅ **Reatividade com `ref` e `computed`**
 11. ✅ **Composition API como base da arquitetura**
 12. ✅ **Persistência com localStorage**
-
----
-
-## 💡 Funcionalidades Futuras (não obrigatórias)
-
-- [ ] **Remover múltiplas tarefas ao mesmo tempo**
-- [ ] **Marcar todas como concluídas**
-- [ ] **Edição de tarefas**
-- [ ] **Filtros por status (Todas / Ativas / Concluídas)**
-
----
-
-## 📁 Estrutura de Pastas
-
-```
-
-src/
-├── components/
-│ ├── header.vue
-│ ├── task-item.vue
-  │ ├── completed-task-button.vue
-  │ ├── task-item.vue
-  │ ├── delete-task-button.vue
-│ ├── new-task-form.vue
-│ └── summary.vue
-├── composables/
-│ └── useTaskStatus.ts
-├── libs/
-│ └── pinia.ts
-├── stores/
-│ └── tasks.ts
-├── types/
-│ └── tasks.ts
-├── app.vue
-└── main.ts
-
-```
-
----
+13. ✅ **Testes unitários com Vitest**
+14. ✅ **Testes end-to-end com Cypress**
 
 ## 🧠 Conceitos Trabalhados
 
@@ -80,6 +48,8 @@ src/
 - Estilização utilitária com Tailwind
 - Estrutura modular para escalabilidade
 - Tipagem e boas práticas com TypeScript
+- Testes unitários e de integração
+- Simulação de comportamento do usuário com Cypress
 
 ---
 
@@ -101,4 +71,11 @@ Este projeto está sob a licença MIT.
 
 ---
 
-> Feito com dedicação por Gabriel Corto Francisco 🌱
+> Feito com dedicação por **Gabriel Corto Francisco** 🌱
+
+---
+```
+
+```
+
+```
