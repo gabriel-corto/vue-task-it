@@ -1,7 +1,7 @@
 import { defineStore } from "pinia"
 import type { TaskType } from "@/types/tasks"
 
-import { useStorageTasks } from "@/composables/usestorageTasks"
+import { useStorageTasks } from "@/composables/useStorageTasks"
 
 const storage = useStorageTasks()
 
