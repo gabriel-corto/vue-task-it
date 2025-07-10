@@ -16,7 +16,7 @@ describe("CompleteTaskButton", () => {
 			},
 		})
 
-		expect(wrapper.find("svg").classes()).toContain("lucide-circle-check-big")
+		expect(wrapper.find("svg").classes()).contain("lucide-circle-check-big")
 	})
 
 	test("render the corret icon button when task is not completed", () => {
@@ -30,6 +30,6 @@ describe("CompleteTaskButton", () => {
 			},
 		})
 
-		expect(wrapper.find("svg").classes()).toContain("lucide-circle")
+		expect(wrapper.find("svg").classes()).contain("lucide-circle")
 	})
 })
