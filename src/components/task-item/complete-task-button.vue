@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{ task: TaskType }>()
+defineProps<{ task: TaskType }>()
 
 import { useTaskStatus } from "@/composables/useTaskStatus"
 import { useTasksStore } from "@/store/tasks"
@@ -17,10 +17,14 @@ function handleCompleteTask(taskId: string) {
 
 <template>
 	<span
-		:class="getTaskStatus(props.task.isCompleted)"
-		@click="() => handleCompleteTask(props.task.id)"
+		:class="getTaskStatus(task.isCompleted)"
+		@click="handleCompleteTask(task.id)"
+		@keyup.enter="handleCompleteTask(task.id)"
+		role="button"
+		tabindex="0"
+		aria-label="Marcar tarefa como concluída"
 	>
-		<CheckCircle class="w-5 h-5" v-if="props.task.isCompleted" />
+		<CheckCircle class="w-5 h-5" v-if="task.isCompleted" />
 		<Circle class="w-5 h-5" v-else />
 	</span>
 </template>

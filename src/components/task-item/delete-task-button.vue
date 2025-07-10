@@ -3,7 +3,7 @@ import { useTasksStore } from "@/store/tasks"
 import { TaskType } from "@/types/tasks"
 import { Trash2 } from "lucide-vue-next"
 
-const props = defineProps<{ task: TaskType }>()
+defineProps<{ task: TaskType }>()
 
 const tasksStore = useTasksStore()
 
@@ -13,10 +13,14 @@ function handleDeleteTask(taskId: string) {
 </script>
 
 <template>
-	<button
+	<span
+		role="button"
+		tabindex="0"
 		class="text-rose-500 cursor-pointer"
-		@click="() => handleDeleteTask(props.task.id)"
+		@click="() => handleDeleteTask(task.id)"
+		@keyup.enter="() => handleDeleteTask(task.id)"
+		aria-label="Excluir tarefa"
 	>
 		<Trash2 class="w-5 h-5" />
-	</button>
+	</span>
 </template>

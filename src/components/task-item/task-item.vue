@@ -4,7 +4,7 @@ import type { TaskType } from "@/types/tasks"
 import DeleteTaskButton from "./delete-task-button.vue"
 import CompleteTaskButton from "./complete-task-button.vue"
 
-const props = defineProps<{ task: TaskType }>()
+defineProps<{ task: TaskType }>()
 </script>
 
 <template>
@@ -13,8 +13,8 @@ const props = defineProps<{ task: TaskType }>()
 	>
 		<CompleteTaskButton :task="task" />
 
-		<p :class="props.task.isCompleted && 'line-through text-neutral-400'">
-			{{ props.task.title }}
+		<p :class="task.isCompleted && 'line-through text-neutral-400'">
+			<span aria-label="Título da tarefa">{{ task.title }}</span>
 		</p>
 
 		<DeleteTaskButton :task="task" />
