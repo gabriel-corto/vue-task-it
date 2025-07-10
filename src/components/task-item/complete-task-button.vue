@@ -24,7 +24,7 @@ function handleCompleteTask(taskId: string) {
 		tabindex="0"
 		aria-label="Marcar tarefa como concluída"
 	>
-		<CheckCircle class="w-5 h-5" v-if="task.isCompleted" />
-		<Circle class="w-5 h-5" v-else />
+		<CheckCircle class="w-5 h-5 text-emerald-500" v-if="task.isCompleted" />
+		<Circle class="w-5 h-5 text-neutral-600" v-else />
 	</span>
 </template>

@@ -31,6 +31,7 @@ function handleAddNewTask(e: Event) {
 		/>
 
 		<button
+			type="submit"
 			:disabled="isTaskInputValid"
 			class="p-1 h-12 rounded-lg disabled:opacity-40 disabled:cursor-not-allowed flex gap-1 items-center bg-blue-500 text-white font-semibold not-disabled:hover:bg-blue-600 duration-150 transition-all cursor-pointer px-4"
 		>
