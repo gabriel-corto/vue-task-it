@@ -16,7 +16,8 @@ function handleDeleteTask(taskId: string) {
 	<span
 		role="button"
 		tabindex="0"
-		class="text-rose-500 cursor-pointer"
+		id="remove-task-button"
+		class="text-rose-500 cursor-pointer remove-task-button"
 		@click="() => handleDeleteTask(task.id)"
 		@keyup.enter="() => handleDeleteTask(task.id)"
 		aria-label="Excluir tarefa"

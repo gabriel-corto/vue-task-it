@@ -17,6 +17,7 @@ function handleCompleteTask(taskId: string) {
 
 <template>
 	<span
+		id="complete-task-button"
 		:class="getTaskStatus(task.isCompleted)"
 		@click="handleCompleteTask(task.id)"
 		@keyup.enter="handleCompleteTask(task.id)"
