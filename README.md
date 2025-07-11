@@ -1,8 +1,3 @@
-Claro, Hob 🌿! Aqui está o `README.md` atualizado com os testes unitários e de integração **(end-to-end)** incluídos nas funcionalidades, e a estrutura de pastas revisada com os diretórios de testes.
-
----
-
-```markdown
 # Task-it 📋 - App de Tarefas com Vue.js
 
 Uma aplicação simples e eficiente de gerenciamento de tarefas desenvolvida com **Vue.js 3**, **Pinia**, **Tailwind CSS** e **TypeScript**. Este projeto representa a **fase 1** da minha jornada de aprendizado no ecossistema Vue, inspirada na estrutura do primeiro módulo do curso da Rocketseat sobre React.
@@ -74,8 +69,3 @@ Este projeto está sob a licença MIT.
 > Feito com dedicação por **Gabriel Corto Francisco** 🌱
 
 ---
-```
-
-```
-
-```
