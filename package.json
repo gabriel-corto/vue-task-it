@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"test": "vitest",
-		"test:e2e": "cypress run",
+		"test:e2e": "start-server-and-test dev http://localhost:5173 'cypress run'",
 		"cypress": "npx cypress open",
 		"build": "vite build",
 		"preview": "vite preview"
@@ -25,7 +25,6 @@
 		"@vue/tsconfig": "^0.7.0",
 		"cypress": "^14.5.1",
 		"happy-dom": "^18.0.1",
-		"start-server-and-test": "^2.0.12",
 		"typescript": "~5.8.3",
 		"vite": "^7.0.3",
 		"vitest": "^3.2.4",
